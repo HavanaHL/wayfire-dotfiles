@@ -1,0 +1,143 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  /* background-color: #1e1e2e; */
+  /* background-color: #181825; */
+  background-color: #000000;
+  /* background-color: rgba(24, 24, 37, 0.6); */
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  /* background-color: #181825; */
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#workspaces button:hover {
+  color: #1e1e2e;
+  background-color: #cccccc;
+}
+
+#workspaces button.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#workspaces button.urgent {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#battery 
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  /* background-color: #181825; */
+  background-color: #000000;
+}
+
+#mpris.playing {
+  color: #ffffff;
+}
+
+#mpris.paused {
+  color: #ffffff;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #ffffff;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #ffffff;
+}
+
+#memory {
+  color: #ffffff;
+}
+
+#clock {
+  color: #ffffff;
+}
+
+#clock.simpleclock {
+  color: #ffffff;
+}
+
+#window {
+  color: #ffffff;
+}
+
+#pulseaudio {
+  color: #ffffff;
+}
+
+#pulseaudio.muted {
+  color: #cccccc;
+}
+
+#custom-logo {
+  color: #ffffff;
+}
+
+#custom-power {
+  color: #ffffff;
+}
+
+#battery.charging {
+    color: #ffffff;
+
+}
+
+#battery.warning:not(.charging) {
+  padding: 0.2rem 0.3rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10px;
+    background-color: #ffbe61;
+    color: black;
+}
+
+#battery.critical:not(.charging) {
+  padding: 0.2rem 0.3rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10px;
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+tooltip {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
