@@ -2,15 +2,15 @@
 
 Multimedia keys = true;
 
-Swayidle = true;
+Idle = true;
 
 Swaybg = true;
 
-Screenshot = "!Broken!";
+Screenshot = true;
 
 Input = true;
 
-Polkit Agente = false;
+Polkit Agente = true;
 
 Bar = {
 enable = true;
